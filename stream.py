@@ -11,7 +11,10 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import zipfile
 st.set_page_config(layout="wide")#sets page wide
-
+st.markdown("""<style>.big-head {font-size:40px !important;text-align:center;text-decoration: underline;font-family: TimesNewRoman;color:white}</style>""", unsafe_allow_html=True)
+st.markdown('<p class="big-head">PR SENSOR DATA</p>', unsafe_allow_html=True)
+#note
+st.write("Note: All figures are filtered by filters except for distribution plot")
 #Loading data
 zf = zipfile.ZipFile('temphum_all.zip') 
 dataframe = pd.read_csv(zf.open('temphum_all.csv'))
