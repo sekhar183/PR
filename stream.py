@@ -11,7 +11,7 @@ import zipfile
 warnings.filterwarnings('ignore') #to ignore warnings
 
 #history_file
-zf = zipfile.ZipFile('temp_hum.zip')
+zf = zipfile.ZipFile('temphum_all.zip')
 df=pd.read_csv(zf.open('temphum_all.csv'))
 
 #past data is already collected(cleaned) and stored in csv file.
