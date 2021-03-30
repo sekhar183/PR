@@ -15,7 +15,7 @@ st.markdown("""<style>.big-head {font-size:45px !important;text-align:center;tex
 st.markdown('<p class="big-head">PR SENSOR DATA</p>', unsafe_allow_html=True)
 #note
 st.write("*Note: All figures are filtered by 'start and end date' filters except for distribution plot*")
-st.write("*Note:page will take longer time to load figures as you increase date range*")
+st.write("*Note: page will take longer time to load figures as you increase date range*")
 
 #Loading data
 zf = zipfile.ZipFile('temphum_all.zip') 
