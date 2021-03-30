@@ -482,4 +482,3 @@ fig_mbe.update_yaxes(title_text="Temperature", secondary_y=False,range=[14,27])
 fig_mbe.update_yaxes(title_text="Humidity", secondary_y=True,range=[16,57])
 
 st.plotly_chart(fig_mbe, sharing='streamlit',use_container_width=True)''', language="python")
-st.write('-'*300)
