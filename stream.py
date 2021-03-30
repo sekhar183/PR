@@ -7,10 +7,12 @@ from tqdm import tqdm
 from requests import get
 from datetime import date
 import warnings
+import zipfile
 warnings.filterwarnings('ignore') #to ignore warnings
 
 #history_file
-df=pd.read_csv(r'C:\Users\kvsekhar\veera\Neha work\all_data\temphum_all.csv')
+zf = zipfile.ZipFile('temp_hum.zip')
+df=pd.read_csv(zf.open('temphum_all.csv'))
 
 #past data is already collected(cleaned) and stored in csv file.
 #new data is collected and cleaned and merged with past file.
