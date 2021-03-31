@@ -31,8 +31,8 @@ def filt(dataframe,start_date,end_date):
 
 #Filters
 
-start_date = st.sidebar.date_input('start date', date.today()-timedelta(3),min_value=datetime.datetime(2020,11,13),max_value=date.today())#start date
-end_date = st.sidebar.date_input('end date', date.today(),max_value=date.today())#end date
+start_date = st.sidebar.date_input('start date', datetime.datetime(2021,3,28),min_value=datetime.datetime(2020,11,13),max_value=datetime.datetime(2021,3,30))#start date
+end_date = st.sidebar.date_input('end date', datetime.datetime(2021,3,30),max_value=datetime.datetime(2021,3,30))#end date
 ft=filt(dataframe,start_date,end_date)
 
 #filtering data using filters
